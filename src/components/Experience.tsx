@@ -16,7 +16,7 @@ const experiences = [
     title: 'Founder & Lead Consultant',
     company: 'BeamX Solutions',
     period: 'Present',
-    location: 'Nigeria/USA',
+    location: 'Remote',
     highlights: [
       'Founded and scaled data intelligence consultancy serving 20+ Nigerian SMEs with AI-powered solutions',
       'Achieved average client revenue growth of 40% within 6 months of implementation',
@@ -68,6 +68,19 @@ const experiences = [
       'Developed dynamic pricing models using Python and scikit-learn, reducing customer acquisition costs by 21%',
       'Created Tableau dashboards cutting manual reporting by 50%',
       'Implemented A/B testing frameworks resulting in 17% increase in acquisition to activation rate'
+    ]
+  },
+  {
+    title: 'Growth & Analytics Manager',
+    company: 'Axon Analytics',
+    period: 'Oct 2016 – Feb 2022',
+    location: 'Lagos, Nigeria',
+    highlights: [
+      'Analyzed 1 billion+ emails sent on the Netcore MarTech platform; delivered annual email banking reports (open rates, CTR, churn, ROI) that guided marketing and product leaders\' strategic planning',
+      'Executed targeted marketing campaigns for financial services clients, achieving 60% conversion rate among commercial banks through data-driven audience segmentation and campaign optimization',
+      'Led full-funnel optimization for Renmoney acquisition (20,000 users), integrating ad retargeting, in-app push, email, SMS and offer sequencing to lift conversion from about 20% to 67% and maximize ROI',
+      'Implemented and optimized marketing automation campaigns for 60+ financial-services clients on platforms akin to Salesforce Marketing Cloud, yielding a 15% revenue uplift',
+      'Introduced performance-measurement frameworks and KPI tracking systems, improving targeting and media optimization to boost client advertising ROI by 28%'
     ]
   }
 ];

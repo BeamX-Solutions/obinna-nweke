@@ -1,4 +1,4 @@
-import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, MapPin, Linkedin, BookOpen } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl transform rotate-6"></div>
               <img
-                src="/second-person.jpg"
+                src="/Obinna headshot BW.jpeg"
                 alt="Obinna Nweke"
                 className="relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto border-4 border-white"
               />
@@ -32,15 +32,15 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm">
               <a
-                href="mailto:nwekeobinna15@gmail.com"
+                href="mailto:hi@obinnanweke.com"
                 className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg transition-all"
               >
                 <Mail size={18} />
-                nwekeobinna15@gmail.com
+                hi@obinnanweke.com
               </a>
               <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
                 <MapPin size={18} />
-                Illinois, USA
+                Delaware, USA
               </div>
               <a
                 href="https://www.linkedin.com/in/obinnanweke"
@@ -52,13 +52,13 @@ export default function Hero() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/obinna-nweke"
+                href="https://medium.com/@obinnanweke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg transition-all"
               >
-                <Github size={18} />
-                GitHub
+                <BookOpen size={18} />
+                Medium
               </a>
             </div>
           </div>

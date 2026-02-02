@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Award } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, BookOpen, Award } from 'lucide-react';
 
 const memberships = [
   'American Statistical Association',
@@ -11,7 +11,7 @@ const memberships = [
 
 const awards = [
   'Regional Award - National Association of Black Accountants (2024)',
-  'Best Data Visualization - DataFest25, American Statistical Association (2025)',
+  'Winner, Best Data Visualization – Data Fest 2025 by American Statistical Association',
   'Fellow - Chartered Management Consultant, Institute of Management Consultants (2025)',
   'Employee of the Month - Axon Analytics (October & July 2021)',
   'Best Male Employee - Axon Analytics (December 2021)',
@@ -36,13 +36,13 @@ export default function Contact() {
 
             <div className="space-y-4">
               <a
-                href="mailto:nwekeobinna15@gmail.com"
+                href="mailto:hi@obinnanweke.com"
                 className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
               >
                 <Mail className="text-blue-400" size={24} />
                 <div>
                   <div className="text-sm text-blue-200">Email</div>
-                  <div className="font-medium">nwekeobinna15@gmail.com</div>
+                  <div className="font-medium">hi@obinnanweke.com</div>
                 </div>
               </a>
 
@@ -58,7 +58,7 @@ export default function Contact() {
                 <MapPin className="text-blue-400" size={24} />
                 <div>
                   <div className="text-sm text-blue-200">Location</div>
-                  <div className="font-medium">Illinois, USA</div>
+                  <div className="font-medium">Delaware, USA</div>
                 </div>
               </div>
 
@@ -76,15 +76,15 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com/obinna-nweke"
+                href="https://medium.com/@obinnanweke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
               >
-                <Github className="text-blue-400" size={24} />
+                <BookOpen className="text-blue-400" size={24} />
                 <div>
-                  <div className="text-sm text-blue-200">GitHub</div>
-                  <div className="font-medium">github.com/obinna-nweke</div>
+                  <div className="text-sm text-blue-200">Medium</div>
+                  <div className="font-medium">medium.com/@obinnanweke</div>
                 </div>
               </a>
             </div>
