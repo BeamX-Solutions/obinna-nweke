@@ -13,7 +13,6 @@ const awards = [
   'Regional Award - National Association of Black Accountants (2024)',
   'Winner, Best Data Visualization – Data Fest 2025 by American Statistical Association',
   'Fellow - Chartered Management Consultant, Institute of Management Consultants (2025)',
-  'Best Male Employee - Axon Analytics (December 2021)',
   'Award of Excellence - Faculty of Management Science, Nnamdi Azikiwe University (2021)'
 ];
 
