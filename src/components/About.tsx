@@ -17,7 +17,7 @@ export default function About() {
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
             As the <span className="font-semibold text-slate-900">Founder & Lead Consultant</span> of BeamX Solutions,
             I've pioneered AI-powered solutions that democratize strategic planning for emerging African markets,
-            serving 20+ Nigerian SMEs and achieving an average client revenue growth of 40% within 6 months.
+            serving 50+ Nigerian SMEs and achieving an average client revenue growth of 40% within 6 months.
           </p>
 
           <p className="text-lg text-slate-700 leading-relaxed">
@@ -33,7 +33,7 @@ export default function About() {
             <div className="text-slate-600">Years of Experience</div>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition-shadow">
-            <div className="text-3xl font-bold text-amber-600 mb-2">20+</div>
+            <div className="text-3xl font-bold text-amber-600 mb-2">50+</div>
             <div className="text-slate-600">Clients Served</div>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition-shadow">
