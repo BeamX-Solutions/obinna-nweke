@@ -1,6 +1,8 @@
 import { Mail, Phone, MapPin, Linkedin, BookOpen, Award } from 'lucide-react';
+import Reveal from './Reveal';
 
 const memberships = [
+  'Fellow, National Institution of Professional Engineers and Scientists (NIPES)',
   'American Statistical Association',
   'National Association of Black Accountants (NABA)',
   'National Society of Black Engineers (NSBE)',
@@ -11,7 +13,7 @@ const memberships = [
 
 const awards = [
   'Regional Award - National Association of Black Accountants (2024)',
-  'Winner, Best Data Visualization – Data Fest 2025 by American Statistical Association',
+  'Winner, Best Data Visualization - Data Fest 2025 by American Statistical Association',
   'Fellow - Chartered Management Consultant, Institute of Management Consultants (2025)',
   'Award of Excellence - Faculty of Management Science, Nnamdi Azikiwe University (2021)'
 ];
@@ -20,22 +22,25 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-bold mb-4 text-center">
-          Get In Touch
-        </h2>
-        <p className="text-center text-blue-200 mb-12 max-w-2xl mx-auto">
-          Interested in collaboration, consulting, or discussing data analytics opportunities?
-          Let's connect.
-        </p>
+        <Reveal>
+          <h2 className="text-4xl font-bold mb-4 text-center">
+            Get In Touch
+          </h2>
+          <p className="text-center text-blue-200 mb-12 max-w-2xl mx-auto">
+            Interested in collaboration, consulting, or discussing data analytics opportunities?
+            Let's connect.
+          </p>
+        </Reveal>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          <Reveal>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
             <div className="space-y-4">
               <a
                 href="mailto:hi@obinnanweke.com"
-                className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
+                className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1"
               >
                 <Mail className="text-blue-400" size={24} />
                 <div>
@@ -64,7 +69,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/obinnanweke"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
+                className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1"
               >
                 <Linkedin className="text-blue-400" size={24} />
                 <div>
@@ -77,7 +82,7 @@ export default function Contact() {
                 href="https://medium.com/@obinnanweke"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
+                className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1"
               >
                 <BookOpen className="text-blue-400" size={24} />
                 <div>
@@ -87,8 +92,10 @@ export default function Contact() {
               </a>
             </div>
           </div>
+          </Reveal>
 
           <div>
+            <Reveal delay={120}>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 mb-6">
               <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <Award className="text-blue-400" />
@@ -106,7 +113,9 @@ export default function Contact() {
                 ))}
               </div>
             </div>
+            </Reveal>
 
+            <Reveal delay={200}>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold mb-4">Recent Awards</h3>
               <div className="space-y-2">
@@ -121,14 +130,17 @@ export default function Contact() {
                 ))}
               </div>
             </div>
+            </Reveal>
           </div>
         </div>
 
-        <div className="text-center border-t border-white/20 pt-8">
-          <p className="text-blue-200">
-            © 2026 Obinna Nweke. Strategic Analytics Professional.
-          </p>
-        </div>
+        <Reveal>
+          <div className="text-center border-t border-white/20 pt-8">
+            <p className="text-blue-200">
+              © 2026 Obinna Nweke. Decision Scientist.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Building2, Calendar } from 'lucide-react';
+import Reveal from './Reveal';
 
 const experiences = [
   {
@@ -73,7 +74,7 @@ const experiences = [
   {
     title: 'Growth & Analytics Manager',
     company: 'Axon Analytics',
-    period: 'Oct 2016 – Feb 2022',
+    period: 'Oct 2016 - Feb 2022',
     location: 'Lagos, Nigeria',
     highlights: [
       'Analyzed 1 billion+ emails sent on the Netcore MarTech platform; delivered annual email banking reports (open rates, CTR, churn, ROI) that guided marketing and product leaders\' strategic planning',
@@ -89,15 +90,17 @@ export default function Experience() {
   return (
     <section id="experience" className="py-20 bg-slate-50">
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-          Professional Experience
-        </h2>
+        <Reveal>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+            Professional Experience
+          </h2>
+        </Reveal>
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
+            <Reveal key={index} delay={(index % 3) * 100}>
             <div
-              key={index}
-              className="bg-white rounded-xl p-6 lg:p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 transform hover:-translate-y-1"
+              className="bg-white rounded-xl p-6 lg:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 transform hover:-translate-y-1 hover:border-blue-200"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
@@ -127,6 +130,7 @@ export default function Experience() {
                 ))}
               </ul>
             </div>
+            </Reveal>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { BarChart3, TrendingUp, Wallet, Wine, Home, MapPin } from 'lucide-react';
+import Reveal from './Reveal';
 
 const projects = [
   {
@@ -55,24 +56,26 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-bold text-slate-900 mb-4 text-center">
-          Featured Projects
-        </h2>
-        <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-          A selection of data science and analytics projects demonstrating expertise in
-          machine learning, predictive modeling, and business intelligence.
-        </p>
+        <Reveal>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4 text-center">
+            Featured Projects
+          </h2>
+          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+            A selection of data science and analytics projects demonstrating expertise in
+            machine learning, predictive modeling, and business intelligence.
+          </p>
+        </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => {
             const Icon = project.icon;
             return (
+              <Reveal key={index} delay={(index % 3) * 120} className="h-full">
               <div
-                key={index}
-                className="bg-gradient-to-br from-slate-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-slate-200 transform hover:-translate-y-1"
+                className="group bg-gradient-to-br from-slate-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 h-full transform hover:-translate-y-1.5 hover:border-blue-200"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className={`${project.color} p-3 rounded-lg text-white`}>
+                  <div className={`${project.color} p-3 rounded-lg text-white transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3`}>
                     <Icon size={24} />
                   </div>
                   <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
@@ -97,6 +100,7 @@ export default function Projects() {
                   </p>
                 </div>
               </div>
+              </Reveal>
             );
           })}
         </div>

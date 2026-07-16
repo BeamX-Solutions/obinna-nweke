@@ -1,4 +1,5 @@
 import { Code2, TrendingUp, Users } from 'lucide-react';
+import Reveal from './Reveal';
 
 const skillCategories = [
   {
@@ -36,20 +37,22 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-          Skills & Expertise
-        </h2>
+        <Reveal>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+            Skills & Expertise
+          </h2>
+        </Reveal>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
+              <Reveal key={index} delay={index * 120} className="h-full">
               <div
-                key={index}
-                className="bg-gradient-to-br from-slate-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-slate-200"
+                className="group bg-gradient-to-br from-slate-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 h-full transform hover:-translate-y-1"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className={`${category.color} p-3 rounded-lg text-white`}>
+                  <div className={`${category.color} p-3 rounded-lg text-white transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3`}>
                     <Icon size={24} />
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">
@@ -70,10 +73,12 @@ export default function Skills() {
                   ))}
                 </div>
               </div>
+              </Reveal>
             );
           })}
         </div>
 
+        <Reveal delay={100}>
         <div className="mt-12 bg-gradient-to-r from-blue-50 to-amber-50 rounded-xl p-8 border border-blue-100">
           <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
             Core Competencies
@@ -87,13 +92,14 @@ export default function Skills() {
             ].map((competency, index) => (
               <span
                 key={index}
-                className="bg-white px-4 py-2 rounded-full text-sm font-medium text-slate-700 shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+                className="bg-white px-4 py-2 rounded-full text-sm font-medium text-slate-700 shadow-sm hover:shadow-md transition-all duration-200 border border-slate-200 hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700 cursor-default"
               >
                 {competency}
               </span>
             ))}
           </div>
         </div>
+        </Reveal>
       </div>
     </section>
   );

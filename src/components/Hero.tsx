@@ -7,30 +7,42 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-          <div className="lg:w-1/3">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl transform rotate-6"></div>
+          <div className="lg:w-1/3 animate-fade-in-up">
+            <div className="relative group motion-safe:animate-float">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl transform rotate-6 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-105"></div>
               <img
                 src="/Obinna headshot BW.jpeg"
                 alt="Obinna Nweke"
-                className="relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto border-4 border-white"
+                className="relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto border-4 border-white transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>
           </div>
 
           <div className="lg:w-2/3 text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
+            <h1
+              className="text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200 animate-fade-in-up"
+              style={{ animationDelay: '100ms' }}
+            >
               Obinna Nweke
             </h1>
-            <p className="text-2xl lg:text-3xl text-blue-200 mb-6 font-light">
+            <p
+              className="text-2xl lg:text-3xl text-blue-200 mb-6 font-light animate-fade-in-up"
+              style={{ animationDelay: '250ms' }}
+            >
               Strategic Analytics Professional
             </p>
-            <p className="text-lg text-blue-100 mb-8 leading-relaxed max-w-2xl">
+            <p
+              className="text-lg text-blue-100 mb-8 leading-relaxed max-w-2xl animate-fade-in-up"
+              style={{ animationDelay: '400ms' }}
+            >
               Data-driven decision maker with 8+ years of experience in business analytics, finance,
               and strategic growth. Transforming complex data into actionable insights for global organizations.
             </p>
 
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm">
+            <div
+              className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm animate-fade-in-up"
+              style={{ animationDelay: '550ms' }}
+            >
               <a
                 href="mailto:hi@obinnanweke.com"
                 className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg transition-all"
