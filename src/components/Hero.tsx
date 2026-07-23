@@ -29,7 +29,7 @@ export default function Hero() {
               className="text-2xl lg:text-3xl text-blue-200 mb-6 font-light animate-fade-in-up"
               style={{ animationDelay: '250ms' }}
             >
-              Strategic Analytics Professional
+              Decision Scientist
             </p>
             <p
               className="text-lg text-blue-100 mb-8 leading-relaxed max-w-2xl animate-fade-in-up"

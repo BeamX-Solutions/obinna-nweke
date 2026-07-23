@@ -21,6 +21,7 @@ export default function Navigation() {
     { label: 'Education', href: '#education' },
     { label: 'Projects', href: '#projects' },
     { label: 'Publications', href: '#publications' },
+    { label: 'Press', href: '#press' },
     { label: 'Contact', href: '#contact' }
   ];
 

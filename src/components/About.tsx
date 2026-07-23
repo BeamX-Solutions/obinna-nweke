@@ -19,7 +19,7 @@ export default function About() {
         <Reveal delay={100}>
         <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 lg:p-12 shadow-lg transition-shadow duration-500 hover:shadow-xl">
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            I'm a Nigerian <span className="font-semibold text-slate-900">Decision Scientist</span> and
+            Obinna Nweke is a Nigerian <span className="font-semibold text-slate-900">Decision Scientist</span> and
             <span className="font-semibold text-slate-900"> Founder & CEO of BeamX Solutions Ltd.</span>, an analytics
             and AI firm dedicated to helping businesses, particularly SMEs across Africa, unlock performance through
             data-driven insights and intelligent technology.
@@ -27,25 +27,25 @@ export default function About() {
 
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
             With over <span className="font-semibold text-slate-900">eight years of hands-on experience</span> in
-            finance, marketing, and business intelligence, I currently serve as a Quantitative Analytics Associate at
-            <span className="font-semibold text-slate-900"> JPMorgan Chase</span>. I hold a BSc in Marketing from
+            finance, marketing, and business intelligence, he currently serves as a Quantitative Analytics Associate at
+            <span className="font-semibold text-slate-900"> JPMorgan Chase</span>. He holds a BSc in Marketing from
             Nnamdi Azikiwe University Awka, an MBA, and an MSc in Applied Statistics and Decision Analytics from
-            Western Illinois University, USA. I am also a <span className="font-semibold text-slate-900">Fellow of the
+            Western Illinois University, USA. He is also a <span className="font-semibold text-slate-900">Fellow of the
             National Institution of Professional Engineers and Scientists (NIPES)</span>.
           </p>
 
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            I'm the architect of the <span className="font-semibold text-slate-900">Guided Decision Intelligence (GDI)
+            He is the architect of the <span className="font-semibold text-slate-900">Guided Decision Intelligence (GDI)
             Framework</span>, a practical approach that equips decision-makers with structured context and critical
             information to maximize the value of Large Language Models and AI tools for high-quality, actionable
-            decisions. My work focuses on blending human instinct with artificial intelligence to drive sustainable
+            decisions. His work focuses on blending human instinct with artificial intelligence to drive sustainable
             growth in emerging markets.
           </p>
 
           <p className="text-lg text-slate-700 leading-relaxed">
-            I've delivered real-world solutions for global brands including
+            He has delivered real-world solutions for global brands including
             <span className="font-semibold text-slate-900"> McDonald's, Samsung,</span> and
-            <span className="font-semibold text-slate-900"> T-Mobile</span>, and I'm a passionate advocate for
+            <span className="font-semibold text-slate-900"> T-Mobile</span>, and is a passionate advocate for
             accessible, strategic AI adoption among African enterprises.
           </p>
         </div>

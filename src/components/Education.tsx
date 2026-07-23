@@ -42,7 +42,7 @@ const certifications = [
 
 const tallies = [
   {
-    value: '4',
+    value: '3',
     label: 'Degrees',
     bg: 'from-blue-50 to-blue-100',
     border: 'border-blue-200',
