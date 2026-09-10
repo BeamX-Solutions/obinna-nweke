@@ -1,53 +1,35 @@
-import { BarChart3, TrendingUp, Wallet, Wine, Home, MapPin } from 'lucide-react';
+import { Gauge, Megaphone, Rocket } from 'lucide-react';
 import Reveal from './Reveal';
 
 const projects = [
   {
-    icon: BarChart3,
-    title: 'How Nigerians Read Emails',
-    year: '2020-2022',
-    description: 'Analysis of over 1 billion emails sent by brands in Nigeria on the Netcore Cloud platform. Explored how subject line, day, time, and email category impact metrics like open rate, click rate, and engagement rate.',
-    impact: 'Helped marketers execute more effective campaigns across Nigeria',
+    icon: Gauge,
+    title: 'Beacon',
+    year: 'BeamX Product',
+    description: 'A business health check that reads a company\'s sales, customers, costs, and operations, then tells the owner exactly what to fix first. Scores readiness across each pillar and returns tailored growth strategies.',
+    impact: 'Over 200 business health assessments completed for Nigerian SMEs',
+    href: 'https://beamxsolutions.com/products/beacon',
+    cta: 'Check my business',
     color: 'bg-blue-500'
   },
   {
-    icon: TrendingUp,
-    title: 'Pricing Elasticity Model',
-    year: '2023',
-    description: 'Developed a dynamic pricing framework to analyze user behavior and competitor benchmarks, running A/B tests on tiered price points.',
-    impact: '12% increase in Average Revenue Per User (ARPU), leading to company-wide adoption',
+    icon: Megaphone,
+    title: 'Luna',
+    year: 'BeamX Product',
+    description: 'An AI marketing plan builder that generates a data-driven strategy around a business\'s actual customers, budget, and goals, instead of generic advice that does not fit.',
+    impact: 'Turns a full marketing plan around in minutes rather than weeks of consulting',
+    href: 'https://luna.beamxsolutions.com/',
+    cta: 'Build my plan',
     color: 'bg-blue-500'
   },
   {
-    icon: Home,
-    title: 'Property Sales Forecasting',
-    year: '2023',
-    description: 'Built and validated ARIMA and SARIMA models to forecast property sales over a 12-month horizon.',
-    impact: 'Enhanced investment decision-making by identifying key seasonal trends',
-    color: 'bg-blue-500'
-  },
-  {
-    icon: Wine,
-    title: 'Wine Preference Prediction',
-    year: '2024',
-    description: 'Used feature engineering, clustering, and regression to predict wine preferences based on chemical properties.',
-    impact: "Revealed alcohol's critical role in consumer choice to guide product development",
-    color: 'bg-blue-500'
-  },
-  {
-    icon: Wallet,
-    title: 'Unified Revenue Dashboard',
-    year: '2024',
-    description: 'Created a unified PowerBI dashboard integrating pricing, promotional performance, and customer response metrics.',
-    impact: 'Kept stakeholders updated with real-time data, improving decision-making speed',
-    color: 'bg-blue-500'
-  },
-  {
-    icon: MapPin,
-    title: 'Airbnb Listings in Barcelona',
-    year: '2024',
-    description: 'Analysis of Airbnb listings to identify patterns in distribution, density, and pricing across neighborhoods. Used geospatial data visualization and statistical methods.',
-    impact: 'Extracted actionable insights for market positioning and pricing strategies',
+    icon: Rocket,
+    title: 'Stellar',
+    year: 'BeamX Product',
+    description: 'A business idea validator that scores feasibility with AI-powered market analysis, so founders can test new ideas and expansion plans before committing time and money.',
+    impact: '100+ ideas validated, with an 87% launch success rate',
+    href: 'https://stellar.beamxsolutions.com/',
+    cta: 'Test my idea',
     color: 'bg-blue-500'
   }
 ];
@@ -61,8 +43,8 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-            A selection of data science and analytics projects demonstrating expertise in
-            machine learning, predictive modeling, and business intelligence.
+            Self-serve AI products built at BeamX Solutions, turning business data into
+            decisions on business health, marketing strategy, and new ideas.
           </p>
         </Reveal>
 
@@ -71,8 +53,11 @@ export default function Projects() {
             const Icon = project.icon;
             return (
               <Reveal key={index} delay={(index % 3) * 120} className="h-full">
-              <div
-                className="group bg-gradient-to-br from-slate-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 h-full transform hover:-translate-y-1.5 hover:border-blue-200"
+              <a
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col bg-gradient-to-br from-slate-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 h-full transform hover:-translate-y-1.5 hover:border-blue-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className={`${project.color} p-3 rounded-lg text-white transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3`}>
@@ -91,7 +76,7 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                <div className="border-t border-slate-200 pt-4 mt-4">
+                <div className="border-t border-slate-200 pt-4 mt-auto">
                   <div className="text-xs font-semibold text-slate-500 mb-1">
                     IMPACT
                   </div>
@@ -99,7 +84,12 @@ export default function Projects() {
                     {project.impact}
                   </p>
                 </div>
-              </div>
+
+                <span className="mt-4 text-sm font-semibold text-blue-600 group-hover:text-blue-700">
+                  {project.cta}
+                  <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1"> →</span>
+                </span>
+              </a>
               </Reveal>
             );
           })}
